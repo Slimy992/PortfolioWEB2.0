@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .monFlexRow{
+        @apply flex flex-row flex-wrap align-middle;
+    }
+
+    .monGivrer{
+       @apply bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg rounded-2xl
+    }
+}
