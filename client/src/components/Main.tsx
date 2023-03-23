@@ -7,13 +7,13 @@ function Main(){
 
     return (
     <>
-        <ParticlesBackGround></ParticlesBackGround> 
+        <ParticlesBackGround/>
         <Parallax pages={3} style={{ top: '0', left: '0' }}>
             <ParallaxLayer offset={0} speed={0.2} factor={1}>
-                <Profile></Profile>
+                <Profile/>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={0.2} factor={1}>
-                <Competence></Competence>
+                <Competence/>
             </ParallaxLayer>
             <ParallaxLayer offset={2} speed={0.2} factor={1}>
             </ParallaxLayer>
