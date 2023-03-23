@@ -4,11 +4,19 @@
 
 
 @layer components {
-    .monFlexRow{
-        @apply flex flex-row flex-wrap align-middle;
+    .monGivrer{
+       @apply bg-white bg-opacity-20 backdrop-blur-md drop-shadow-lg
     }
 
-    .monGivrer{
-       @apply bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg rounded-2xl
+    .GrosseurTitre{
+        @apply  text-xl md:text-2xl lg:text-3xl xl:text-4xl
+    }
+
+    .GrosseurSousTitre{
+        @apply  text-lg md:text-xl lg:text-2xl xl:text-3xl
+    }
+
+    .GrosseurTexteNormal{
+        @apply text-base md:text-lg lg:text-xl xl:text-2xl
     }
 }

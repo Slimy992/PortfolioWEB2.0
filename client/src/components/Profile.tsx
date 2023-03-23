@@ -5,14 +5,15 @@ function Profile(){
     
     
     return (
-    <div className="mt-72 w-full  h-1/2 monFlexRow justify-center">
-        <div className="w-72 h-72 mr-12">
-            <img src={logo} className="animate-spin-slow"/>
-        </div>
-
-        <div className=" w-[40%] h-72 monGivrer text-center  text-white text-4xl">
-            <div className='my-4'>
-                <span>À Propos</span>
+    <div className="mr-16 my-24 w-full  h-1/2 flex flex-col md:flex-row  flex-nowrap align-midfle justify-center content-center">
+        <img src={logo} className="animate-spin-slow w-64  h-64 my-8 md:mx-8 self-center"/>
+        <div className=" w-fit h-fit monGivrer  rounded-2xl text-white self-center">
+            <div className="m-4 flex flex-col">
+                <span className="mb-4 GrosseurTitre">Salut, je m'appelle Gabriel Lafrance 👋</span>
+                <span className="mb-4 GrosseurSousTitre">Je suis un jeune développeur Web</span>
+                <span className="mb-4 GrosseurTexteNormal"> 🌎 Situé à Rimouski, QC, Canada</span>
+                <span className="mb-4 GrosseurTexteNormal"> 💻 Présentement à mon propre compte</span>
+                <span className="mb-4 GrosseurTexteNormal"> 📧 lafgab01@hotmail.com</span>
             </div>
         </div>
 
