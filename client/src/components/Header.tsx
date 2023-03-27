@@ -4,11 +4,7 @@ function Header(){
 
 
     return (
-    <header className="w-full h-24 monGivrer  monFlexRow">
-        <span>Test</span>
-        <span>Test</span>
-        <span>Test</span>
-
+    <header className="w-full mb-16 h-24 monGivrer  monFlexRow">
     </header>
     
     
