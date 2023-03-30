@@ -12,10 +12,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': { 'raw': '(min-height: 535px)' },
+      },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
       }
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-hamburgers')],
 };

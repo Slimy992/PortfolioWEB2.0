@@ -1,3 +1,7 @@
+import portofolio from "../../assets/Project/Portfolio.png"
+import AVenir from "../../assets/Project/AVenir.jpg"
+
+
 const competence = [
     {
         nom : "JavaScript",
@@ -44,7 +48,7 @@ const projects = [
             couleur: "text-pink-600",
           },
       ],
-      image: "../../assets/Project/Portfolio.png",
+      image: portofolio,
       lien: "https://github.com/Slimy992/PortfolioWEB2.0",
     },
     {
@@ -65,7 +69,7 @@ const projects = [
           couleur: "text-violet-500",
         },
       ],
-      image: "../../assets/Project/Portfolio.png",
+      image: AVenir,
       lien: "https://github.com/",
     },
     {
@@ -73,7 +77,7 @@ const projects = [
       description:
         "Encore à trouver",
       tags: [],
-      image: "../../assets/Project/Portfolio.png",
+      image: AVenir,
       lien: "https://github.com/",
     },
   ];

@@ -1,13 +1,29 @@
-import Header from "src/components/Header";
-import Footer from "src/components/Footer";
-import Main from "src/components/Main";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-export function App() {
-  return (
+import ParticlesBackGround from "../components/ParticuleBackground";
+import Profile from "../components/section/Profile";
+import Propos from "src/components/section/Propos";
+import Competence from "src/components/section/Competence";
+import Projects from "src/components/section/Projects";
+
+export function App(){
+
+    return (
     <>
-      <Main></Main>
+        <Header/>
+        <ParticlesBackGround/>
+        <Profile/>
+        <Propos/>
+        <Competence/>
+        <Projects/>
+        <Footer/>
     </>
-  );
+    
+    
+    
+    
+    );
 }
 
 export default App;

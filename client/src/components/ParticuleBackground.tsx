@@ -13,6 +13,7 @@ const ParticlesBackGround = () => {
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
         await console.log(container);
     }, []);
+    
     return (
         <Particles className="fixed -z-10"
             id="tsparticles"
@@ -51,7 +52,7 @@ const ParticlesBackGround = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: { min: 2, max: 4 },
+                        speed: 2,
                         straight: false,
                     },
                     number: {
@@ -59,7 +60,7 @@ const ParticlesBackGround = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 120,
                     },
                     opacity: {
                         value: 0.8,
