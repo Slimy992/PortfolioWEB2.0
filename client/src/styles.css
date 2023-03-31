@@ -69,5 +69,5 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    @apply font-mono scroll-smooth
 }

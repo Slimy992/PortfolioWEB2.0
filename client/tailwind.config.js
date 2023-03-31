@@ -13,7 +13,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': { 'raw': '(min-height: 535px)' },
+        'xs': { 'raw': '(min-width: 535px)' },
+        'lgplus': { 'raw': '(min-width: 1148px)' },
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
