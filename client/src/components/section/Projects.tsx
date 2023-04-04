@@ -22,7 +22,7 @@ function Projects(){
                             {projects.map((project, index) => (
                             <ProjectCard nom={project.nom} description={project.description} tags={project.tags} image={project.image} lien={project.lien}/>
                             ))}
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>

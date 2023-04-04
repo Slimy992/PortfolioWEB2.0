@@ -12,12 +12,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes :{
+        dropDown : {
+          '0%' : {	opacity: '0', transform: 'translateY(-250px)'},
+          '100%' : { opacity: '1', transform: 'translateY(0)'},
+        },
+      },
       screens: {
         'xs': { 'raw': '(min-width: 535px)' },
         'lgplus': { 'raw': '(min-width: 1148px)' },
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
+        'drop-down' : 'dropDown 1s ease 0s 1 normal forwards',
       }
     },
   },
