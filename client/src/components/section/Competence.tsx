@@ -11,7 +11,7 @@ import { competence } from "../constans";
 function Competence(){
 
     return (
-        <section className="mt-32  h-1/2 flex flex-col md:flex-row  flex-wrap align-midle justify-center content-center">
+        <section id="Competence" className="mt-32  h-1/2 flex flex-col md:flex-row  flex-wrap align-midle justify-center content-center">
             <div className="mx-8 w-3/4 min-w-[300px] h-fit monGivrer  rounded-2xl text-slate-200 self-center text-center">
                 <div className="m-4 flex flex-col"> 
                     <Soustitre soustitre="Compétence"/> 

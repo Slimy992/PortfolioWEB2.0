@@ -14,9 +14,13 @@ module.exports = {
     extend: {
       keyframes :{
         dropDown : {
-          '0%' : {	opacity: '0', transform: 'translateY(-250px)'},
+          '0%' : {	opacity: '0', transform: 'translateY(-100%)'},
           '100%' : { opacity: '1', transform: 'translateY(0)'},
         },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
       },
       screens: {
         'xs': { 'raw': '(min-width: 535px)' },
@@ -25,6 +29,7 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 60s linear infinite',
         'drop-down' : 'dropDown 1s ease 0s 1 normal forwards',
+        'fadeIn': "fadeIn 2s ease-in forwards"
       }
     },
   },

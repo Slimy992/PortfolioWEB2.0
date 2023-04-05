@@ -8,7 +8,7 @@ function Projects(){
     
     
     return (
-        <section className="mt-32 h-1/2 flex flex-col align-midle justify-center content-center">
+        <section id="Project" className="mt-32 h-1/2 flex flex-col align-midle justify-center content-center">
             <div className="w-3/4 h-fit min-w-[300px] monGivrer rounded-2xl text-slate-200 self-center text-center">
                 <div className="m-4 flex flex-col"> 
                     <Soustitre soustitre="Mes Projects"/>

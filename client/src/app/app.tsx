@@ -1,16 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
+
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 import ParticlesBackGround from "../components/ParticuleBackground";
 import Profile from "../components/section/Profile";
-import Propos from "src/components/section/Propos";
-import Competence from "src/components/section/Competence";
-import Projects from "src/components/section/Projects";
+import Propos from "../components/section/Propos";
+import Competence from "../components/section/Competence";
+import Projects from "../components/section/Projects";
 
 export function App(){
 
     return (
-    <>
+    <BrowserRouter>
         <Header/>
         <ParticlesBackGround/>
         <Profile/>
@@ -18,11 +20,7 @@ export function App(){
         <Competence/>
         <Projects/>
         <Footer/>
-    </>
-    
-    
-    
-    
+    </BrowserRouter>
     );
 }
 

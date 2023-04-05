@@ -6,7 +6,7 @@ import { Soustitre } from "../builder/SousTitreSection";
 function Profile(){
     
     return (
-    <section  className="mt-16 flex flex-col flex-wrap align-midle justify-center content-center">
+    <section  id="Presentation" className="mt-14 flex flex-col flex-wrap align-midle justify-center content-center">
         <img src={logo} className="animate-spin-slow min-w-[16rem] min-h-[16rem] w-[15%] h-[15%] mb-16   self-center"/>
         <div className="w-3/4 h-fit min-w-[300px] monGivrer rounded-2xl text-slate-200 self-center text-center">
             <div className="m-4">
