@@ -18,7 +18,7 @@ function Projects(){
                             le liens vers le code sur GitHub. Cela reflète mes
                             capacités à résoudre des problèmes complexes et à travailler avec différentes technologies.
                         </p>
-                        <div className="mt-4 flex flex-col xl:flex-row justify-around   gap-7">
+                        <div className="mt-4 flex flex-col xl:flex-row justify-around gap-7">
                             {projects.map((project, index) => (
                             <ProjectCard nom={project.nom} description={project.description} tags={project.tags} image={project.image} lien={project.lien}/>
                             ))}

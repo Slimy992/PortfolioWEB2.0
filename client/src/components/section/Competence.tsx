@@ -15,7 +15,7 @@ function Competence(){
             <div className="mx-8 w-3/4 min-w-[300px] h-fit monGivrer rounded-2xl text-slate-200 self-center text-center">
                 <div className="m-4 flex flex-col"> 
                     <Soustitre soustitre="Compétence"/> 
-                    <div className="grid Grid1x6 xs:Grid2x3 md:Grid3x2 GrosseurTexteNormal">
+                    <div className="grid Grid1x6 xs:Grid2x3 md:grid-cols-3 md:grid-rows-2  GrosseurTexteNormal"> {/* Interaction Weird avec breakpoint custom. md: explicit marche*/}
                             {competence.map((value) => (
                                 <CompetenceCard competence={value.nom} rating={value.rating}/>
                             )
