@@ -52,14 +52,6 @@
         @apply grid-cols-2  grid-rows-1
     }
 
-    .RoundedHaut{
-        -webkit-border-top-left-radius: 10px;
-        -webkit-border-top-right-radius: 10px;
-        -moz-border-radius-topleft: 10px;
-        -moz-border-radius-topright: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;}
-
     .BoutonMenu{
         @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-4  py-1 first-letter:self-center hover:scale-105 transition m-2 BorderNoirThicc
     }

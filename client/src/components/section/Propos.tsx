@@ -16,6 +16,7 @@ function Propos(){
                     les structures de données. De plus, j'ai aussi appris comment développer de manière proffessionelle 
                     avec les schéma de modélisation, l'approche AGILE ainsi que toute les activités de développement (documentation, analyse des besoins, etc).
                 </p>
+                <div className="mt-2 mb-2 w-full h-1  rounded-full  bg-slate-200 m-auto"/>
                 <p className="ProposTexte">
                     Je n'ai aucune expérience concrète en informatique en entreprise. 
                     Cela n'empêche pas que depuis mon plus jeune âge, je suis en contact constant avec l'informatique. 
@@ -25,6 +26,7 @@ function Propos(){
                     mais aussi des sites Web divers et varié allant d'un simple site static à une boutique complète en ligne. 
                     Depuis récement, j'ai commencé a trouvé un certain plaisir à développer des petits logiciels.
                 </p>
+                <div className="mt-2 mb-2 w-full h-1  rounded-full  bg-slate-200 m-auto"/>
                 <p className="ProposTexte">
                     Petit à petit, plus les petit projects avancaient plus je les trouvais obsolètes. 
                     J'ai donc décider de réunir toutes mes compétences et de faire trois projects plus à l'image de se que j'était capable de faire.
