@@ -15,7 +15,8 @@ const ParticlesBackGround = () => {
     }, []);
     
     return (
-        <Particles className="fixed -z-10"
+        <Particles 
+            className="fixed -z-10"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -37,7 +38,7 @@ const ParticlesBackGround = () => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 125,
+                        distance: 150,
                         enable: true,
                         opacity: 0.8,
                         width: 1,
@@ -64,7 +65,7 @@ const ParticlesBackGround = () => {
                             enable: true,
                             area: 1000,
                         },
-                        value: 60,
+                        value: 65,
                     },
                     opacity: {
                         value: 0.8,
