@@ -10,9 +10,9 @@ type ProjectProps = {
 
 export const ProjectCard =  ({nom, description, tags, image, lien } : ProjectProps ) => {
     return (
-        <div className="rounded-2xl w-full xl:max-w-[33%] justify-center align-middle bg-white">
+        <div className="rounded-[18px] w-full xl:max-w-[33%] justify-center align-middle bg-white BorderNoirThicc">
             <div className="relative max-h-[18rem]">
-                <img src={image} className="w-full h-[18rem]  RoundedHaut  object-cover"/>
+                <img src={image} className="w-full h-[18rem]  rounded-t-xl   object-cover"/>
                 <div className="absolute inset-0 flex justify-end m-1">
                     <div className="xs:w-20 xs:h-24 h-16 w-16 rounded-full flex justify-center items-center cursor-pointer">
                         <a href={lien} target="_blank">
@@ -22,10 +22,10 @@ export const ProjectCard =  ({nom, description, tags, image, lien } : ProjectPro
                 </div>
             </div>
             <div className="bg-white w-auto h-fit text-zinc-900 rounded-2xl">
-                <h1 className="GrosseurTitre my-4">{nom}</h1>
+                <h1 className="GrosseurTitre my-2">{nom}</h1>
                 <div className="w-[90%]  h-[2px]  rounded-full  bg-zinc-900 m-auto"/>
-                <p className="GrosseurTexteNormal m-8">{description}</p>
-                <div className="m-6 flex flex-row flex-wrap  justify-start">
+                <p className="GrosseurTexteNormal m-2">{description}</p>
+                <div className="m-2 flex flex-row flex-wrap  justify-start">
                     {tags.map((tag: any) => (
                         <span className={`GrosseurTextePetit mr-6 ${tag.couleur}`}>
                         #{tag.name} 

@@ -33,7 +33,7 @@ const projects = [
     {
       nom: "Mon Portfolio",
       description:
-        "C'est simplement ce que vous voyez présentementement, mon portoflio en tant que jeune développeur Web.",
+        "C'est simplement mon portoflio en tant que jeune développeur Web.",
       tags: [
         {
           name: "React",
@@ -54,7 +54,7 @@ const projects = [
     {
       nom: "Blizzard Club",
       description:
-        "Une boutique en ligne utilisant MySql pour gérer les articles, les utilisateurs et leur paniers ainsi que Stripe pour les payements.",
+        "Une boutique en ligne utilisant MySql ainsi que Stripe pour les payements.",
       tags: [
         {
             name: "React",

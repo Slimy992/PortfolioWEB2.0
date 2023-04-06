@@ -25,7 +25,7 @@ const ParticlesBackGround = () => {
                         value: "#000000",
                     },
                 },
-                fpsLimit: 120,
+                fpsLimit: 60,
                  interactivity: {
                     events: {
                         resize: true,
@@ -41,6 +41,10 @@ const ParticlesBackGround = () => {
                         enable: true,
                         opacity: 0.8,
                         width: 1,
+                        triangles: {
+                            enable: true,
+                            opacity: 0.1,
+                        },
                     },
                     collisions: {
                         enable: true,
@@ -58,9 +62,9 @@ const ParticlesBackGround = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
-                        value: 120,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.8,

@@ -12,10 +12,10 @@ function Competence(){
 
     return (
         <section id="Competence" className="mt-32  h-1/2 flex flex-col md:flex-row  flex-wrap align-midle justify-center content-center">
-            <div className="mx-8 w-3/4 min-w-[300px] h-fit monGivrer  rounded-2xl text-slate-200 self-center text-center">
+            <div className="mx-8 w-3/4 min-w-[300px] h-fit monGivrer rounded-2xl text-slate-200 self-center text-center">
                 <div className="m-4 flex flex-col"> 
                     <Soustitre soustitre="Compétence"/> 
-                    <div className="grid Grid2x3 md:Grid3x2 GrosseurTexteNormal">
+                    <div className="grid Grid1x6 xs:Grid2x3 md:Grid3x2 GrosseurTexteNormal">
                             {competence.map((value) => (
                                 <CompetenceCard competence={value.nom} rating={value.rating}/>
                             )

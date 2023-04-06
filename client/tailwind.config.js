@@ -28,10 +28,12 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
-        'drop-down' : 'dropDown 1s ease 0s 1 normal forwards',
+        'drop-down' : 'dropDown 0.7s ease 0s 1 normal forwards',
         'fadeIn': "fadeIn 2s ease-in forwards"
       }
     },
   },
-  plugins: [require('tailwind-hamburgers')],
+  plugins: [
+    require('tailwind-hamburgers'),
+  ],
 };
