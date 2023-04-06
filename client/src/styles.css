@@ -76,6 +76,10 @@
         @apply  border-4  border-zinc-800
     }
 
+    .ProposTexte{
+        @apply text-left my-2 GrosseurTexteNormal leading-7 mx-6
+    }
+
 }
 
 ::-webkit-scrollbar {
