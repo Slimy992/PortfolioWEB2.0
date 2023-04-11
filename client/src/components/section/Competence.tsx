@@ -8,11 +8,11 @@ import { Soustitre } from "../builder/SousTitreSection";
 
 import { competence } from "../constans";
 
-function Competence(){
+const Competence= () =>{
 
     return (
         <section id="Competence" className="mt-32  h-1/2 flex flex-col md:flex-row  flex-wrap align-midle justify-center content-center">
-            <div className="mx-8 w-3/4 min-w-[300px] h-fit monGivrer rounded-2xl text-slate-200 self-center text-center">
+            <div className="mx-8 w-3/4 min-w-[300px] h-fit monGivrer rounded-2xl text-slate-200 self-center text-center BorderBlanc">
                 <div className="m-4 flex flex-col"> 
                     <Soustitre soustitre="Compétence"/> 
                     <div className="grid Grid1x6 xs:Grid2x3 md:grid-cols-3 md:grid-rows-2  GrosseurTexteNormal"> {/* Interaction Weird avec breakpoint custom. md: explicit marche*/}
@@ -26,7 +26,7 @@ function Competence(){
                         Au cours de mon cheminement, j'ai eu l'occassion d'apprendre plein de choses. 
                         J'ai appris à utilisé des frameworks 
                         tel que <span className="inline-block">React <FaReact color="#61dafb" style={{display: "inline", marginTop: "-5px", marginRight: "5px"}} size="2.4vw"/></span>
-                        mais aussi des librairie UI 
+                        mais aussi des librairies UI 
                         comme <span className="inline-block">Tailwind <SiTailwindcss color="#38bdf8" style={{display: "inline", marginTop: "-5px", marginRight: "5px"}} size="2.4vw"/></span>
                         ou <span className="inline-block">MUI <SiMui color="#007FFF" style={{display: "inline", marginTop: "-5px", marginRight: "5px"}} size="2.4vw"/>. </span> Pour 
                         travailler, 

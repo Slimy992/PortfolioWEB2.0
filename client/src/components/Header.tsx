@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import github from "../assets/logo/github.png"
 
 
-function Header(){
+const Header = () => {
 
     var breakpoint : number = 720; {/* Width en pixel que le menu passe de normal à burger*/}
 
@@ -41,7 +41,7 @@ function Header(){
     }
 
     return (
-    <header className="sticky top-0 z-10 text-zinc-700 text-center monGivrer h-fit w-full flex flex-col">
+    <header className="sticky top-0 z-10 text-zinc-700 text-center monGivrer h-fit w-auto flex flex-col">
         <div className=" flex flex-row justify-between">
             <a href="https://github.com/Slimy992" target="_blank">
                 <img src={github} className="m-2 min-w-[4rem] min-h-[4rem] w-[14%] h-auto object-contain hover:scale-110  transition"/>
@@ -54,7 +54,7 @@ function Header(){
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact' className="BoutonMenu">Contact</Link>
                 </div>
             </div >
-            <div className={largeurEcran <= breakpoint ? " mr-12 mb-[1.6rem]" : " hidden w-0 h-0"}>
+            <div className={largeurEcran <= breakpoint ? " mr-6 mb-[1.6rem]" : " hidden w-0 h-0"}>
                     <div  onClick={Switch} className={estActif ? "tham-active tham tham-e-squeeze tham-w-10 mt-8 ml-8" : "tham tham-e-squeeze tham-w-10 mt-8 ml-8"}>
                         <div className="tham-box">
                             <div className="tham-inner bg-white" />

@@ -10,7 +10,7 @@ type ProjectProps = {
 
 export const ProjectCard =  ({nom, description, tags, image, lien } : ProjectProps ) => {
     return (
-        <div className="rounded-[18px] w-full xl:max-w-[33%] justify-center align-middle bg-white BorderNoirThicc">
+        <div className="rounded-[18px] w-full xl:max-w-[33%] justify-center align-middle bg-white BorderNoir">
             <div className="relative max-h-[18rem]">
                 <img src={image} className="w-full h-[18rem]  rounded-t-xl   object-cover"/>
                 <div className="absolute inset-0 flex justify-end -m-3">

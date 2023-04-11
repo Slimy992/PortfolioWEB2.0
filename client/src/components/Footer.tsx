@@ -1,7 +1,7 @@
 import { BsArrowBarUp } from "react-icons/bs";
 import { HashLink as Link } from "react-router-hash-link";
 
-function Footer(){
+const Footer = () =>{
     return (
     <footer className="mt-16 w-full h-16 monGivrer flex flec-col justify-center align-middle">
         <span className="text-white GrosseurTextePetit mt-5 mr-4"> © Copyright Gabriel Lafrance 2023

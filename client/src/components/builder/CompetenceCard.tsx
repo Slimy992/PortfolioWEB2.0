@@ -8,7 +8,7 @@ type CardProps = {
 
 export const CompetenceCard = ({ competence, rating }: CardProps) => {
   return (
-    <div className="bg-slate-200  py-[0.3vh] px-[0.7vw] rounded-xl text-center text-black  mx-6 my-1 BorderProject">
+    <div className="bg-slate-200  py-[0.3vh] px-[0.7vw] rounded-xl text-center text-black  mx-6 my-1 BorderNoir">
       <span className="inline-block">{competence} : <Rating rating={rating}/></span>
     </div>
      )

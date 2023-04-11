@@ -53,18 +53,18 @@
     }
 
     .BoutonMenu{
-        @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-4  py-1 first-letter:self-center hover:scale-105 transition m-2 BorderNoirThicc
+        @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-4  py-1 first-letter:self-center hover:scale-105 transition m-2 BorderNoir
     }
 
     .BoutonMenuBurger{
         @apply BoutonMenu w-64 py-2 self-center m-4
     }
     
-    .BorderBlancThin{
-        @apply  border-2  border-white
+    .BorderBlanc{
+        @apply  border-4  border-white
     }
 
-    .BorderNoirThicc{
+    .BorderNoir{
         @apply  border-4  border-zinc-800
     }
 
@@ -111,3 +111,4 @@
 html {
     @apply font-mono scroll-smooth
 }
+
