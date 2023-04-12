@@ -64,10 +64,10 @@ const Header = () => {
         </div>
         <div className={estActif && largeurEcran <= breakpoint ? "animate-drop-down w-full h-screen": "hidden"}>
             <div className="w-full h-screen GrosseurTitre flex flex-col justify-around align-middle">
-                <Link smooth scroll={el => scrollOffset(el, 96)} to='#Presentation' className="BoutonMenuBurger">Présentation</Link>
-                <Link smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétence</Link>
-                <Link smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Project</Link>
-                <Link smooth scroll={el => scrollOffset(el, 112)} to='#Contact' className=" mb-48 BoutonMenuBurger ">Contact</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Presentation' className="BoutonMenuBurger">Présentation</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétence</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Project</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 112)} to='#Contact' className=" mb-48 BoutonMenuBurger ">Contact</Link>
             </div>
         </div>
     </header>
