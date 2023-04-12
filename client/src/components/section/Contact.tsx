@@ -20,7 +20,7 @@ const Contact = () => {
 
   const handleSubmit = (e : any) => {
     e.preventDefault();
-    if (form.nom ||  form.email || form.message === ""){
+    if (form.nom === "" ||  form.email === "" || form.message === ""){
       alert("Erreur interne : Votre mail n'a pas pu être envoyer. Veuillez remplir tout les champs requis.");
       return;
     }
