@@ -7,6 +7,7 @@ TODO :
         - Script de déployment à chaque git push
         - Corriger le bouton du footer (min-width)
         - En version mobile, fermer le menu automatiquement lorsque un bouton est cliqué
+        - Changer le title
         
     À faire si j'ai le temps : 
         - Changer les data de ../constants à une BD MySql sur mon VPS
