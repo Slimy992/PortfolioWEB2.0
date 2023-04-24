@@ -1,5 +1,5 @@
 echo "Deploiement vers production"
-git checkout master
+git checkout -f master
 
 echo "Building master"
 npm run build

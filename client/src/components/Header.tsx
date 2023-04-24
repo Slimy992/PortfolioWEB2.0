@@ -10,11 +10,11 @@ const Header = () => {
 
     const [estActif, setActif] = React.useState(false);
 
-    function Switch() {
+function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burger*/ }
         setActif(!estActif);
     }
 
-    const [largeurEcran, setLargeurEcran] = React.useState(window.innerWidth);
+    const [largeurEcran, setLargeurEcran] = React.useState(window.innerWidth); {/* Gère la resize pour détecter quand mettre le menu bruger */}
 
     React.useEffect(() => {
         console.log(largeurEcran);
@@ -31,7 +31,7 @@ const Header = () => {
         };
     })
 
-    const scrollOffset = (el : any, offset : number) => {
+    const scrollOffset = (el : any, offset : number) => {  {/* Gère le offset du scroll pour ""centrer le contenue au scroll*/ }
         const elementPosition = el.offsetTop - offset;
         window.scroll({
           top: elementPosition,
