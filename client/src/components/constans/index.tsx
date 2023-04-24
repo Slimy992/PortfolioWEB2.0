@@ -52,9 +52,9 @@ const projects = [
       lien: "https://github.com/Slimy992/PortfolioWEB2.0",
     },
     {
-      nom: "Blizzard Club",
+      nom: "Super-Auto",
       description:
-        "Une boutique en ligne utilisant MySql ainsi que Stripe pour les payements.",
+        "Un site fonctionnelle pour louer une voiture ou acheter un service.",
       tags: [
         {
             name: "React",
@@ -70,7 +70,7 @@ const projects = [
         },
       ],
       image: AVenir,
-      lien: "https://github.com/",
+      lien: "https://github.com/Slimy992/BoutiqueLocation",
     },
     {
       nom: "Project 3",

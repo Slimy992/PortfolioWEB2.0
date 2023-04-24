@@ -50,7 +50,7 @@ const Header = () => {
                 <div className="GrosseurTexteNormal flex flex-row justify-around align-middle items-center mr-4">
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation' className="BoutonMenu">Présentation</Link>
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' className="BoutonMenu">Compétence</Link>
-                    <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project' className="BoutonMenu">Project</Link>
+                    <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project' className="BoutonMenu">Projet</Link>
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact' className="BoutonMenu">Contact</Link>
                 </div>
             </div >
@@ -66,7 +66,7 @@ const Header = () => {
             <div className="w-full h-screen GrosseurTitre flex flex-col justify-around align-middle">
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Presentation' className="BoutonMenuBurger">Présentation</Link>
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétence</Link>
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Project</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Projet</Link>
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 112)} to='#Contact' className=" mb-48 BoutonMenuBurger ">Contact</Link>
             </div>
         </div>
