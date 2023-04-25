@@ -1,5 +1,6 @@
 import portofolio from "../../assets/Project/Portfolio.png"
 import AVenir from "../../assets/Project/AVenir.jpg"
+import SuperLoc from "../../assets/Project/Super-Loc.png"
 
 
 const competence = [
@@ -52,7 +53,7 @@ const projects = [
       lien: "https://github.com/Slimy992/PortfolioWEB2.0",
     },
     {
-      nom: "Super-Auto",
+      nom: "Super-Loc",
       description:
         "Un site fonctionnelle pour louer une voiture ou acheter un service.",
       tags: [
@@ -69,7 +70,7 @@ const projects = [
           couleur: "text-violet-500",
         },
       ],
-      image: AVenir,
+      image: SuperLoc,
       lien: "https://github.com/Slimy992/BoutiqueLocation",
     },
     {
