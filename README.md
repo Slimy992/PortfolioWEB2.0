@@ -5,9 +5,6 @@ TODO :
 
     À faire :
         - Script de déployment à chaque git push
-        - Corriger le bouton du footer (min-width)
-        - En version mobile, fermer le menu automatiquement lorsque un bouton est cliqué
-        - Changer le title
         - Rendre le code pour les grids plus propre
         
     À faire si j'ai le temps : 
