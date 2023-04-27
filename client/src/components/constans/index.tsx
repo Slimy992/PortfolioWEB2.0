@@ -55,7 +55,7 @@ const projects = [
     {
       nom: "Super-Loc",
       description:
-        "Un site fonctionnelle pour louer une voiture ou acheter un service.",
+        "Un site fonctionnelle avec un API REST et un base de donnée MySQL.",
       tags: [
         {
             name: "React",
@@ -63,11 +63,11 @@ const projects = [
         },
         {
           name: "MySql",
-          couleur: "text-blue-600",
+          couleur: "text-purple-600",
         },
         {
-          name: "Stripe",
-          couleur: "text-violet-500",
+          name: "RESTful",
+          couleur: "text-green-500",
         },
       ],
       image: SuperLoc,
