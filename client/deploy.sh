@@ -1,5 +1,4 @@
 echo "Deploiement vers production"
-git fetch
 git checkout -master
 
 echo "Building master"
