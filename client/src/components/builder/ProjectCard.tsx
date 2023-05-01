@@ -13,7 +13,7 @@ export const ProjectCard =  ({nom, description, tags, image, lien } : ProjectPro
             <div className="rounded-[18px] w-full xl:max-w-[33%] justify-center align-middle bg-white BorderNoir hover:scale-105 transition" >
                 <a href={lien} target="_blank">
                     <div className="relative max-h-[18rem] ">
-                        <img src={image} className="w-full h-[18rem]  rounded-t-xl   object-cover"/>
+                        <img src={image} className="w-full h-[18rem]  rounded-t-xl   object-cover" alt="Gabriel Lafrance Project"/>
                     </div>
                     <div className="bg-white w-auto h-fit text-zinc-900 rounded-2xl">
                         <h1 className="GrosseurTitre my-2">{nom}</h1>

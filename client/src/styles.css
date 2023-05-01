@@ -53,7 +53,7 @@
     }
 
     .BoutonMenu{
-        @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-4  py-1 first-letter:self-center hover:scale-105 transition m-2 BorderNoir
+        @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-4  py-1 first-letter:self-center transition m-2 mt-3 shadow-2xl shadow-black hover:bg-zinc-800 hover:text-white hover:shadow-white hover:scale-95
     }
 
     .BoutonMenuBurger{
@@ -69,7 +69,7 @@
     }
 
     .ProposTexte{
-        @apply text-left my-2 GrosseurTexteNormal leading-7 mx-6
+        @apply text-center md:text-left my-2 GrosseurTexteNormal leading-7 mx-6
     }
 
 }
