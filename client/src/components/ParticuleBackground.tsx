@@ -42,10 +42,6 @@ const ParticlesBackGround = () => {
                         enable: true,
                         opacity: 0.8,
                         width: 1,
-                        triangles: {
-                            enable: true,
-                            opacity: 0.1,
-                        },
                     },
                     collisions: {
                         enable: true,
@@ -63,7 +59,7 @@ const ParticlesBackGround = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 1000,
+                            area: 800,
                         },
                         value: 65,
                     },
