@@ -13,7 +13,7 @@ const Propos = () =>{
                     Salut! Je m'appelle Gabriel Lafrance et je suis un jeune développeur. 
                     Je suis présentement étudiant finissant au Cégep de Rimouski en technique de l'informatique.
                     Durant mes années d'étude, j'ai appris plusieur notion de développement comme la programmation orienté object, 
-                    les structures de données. De plus, j'ai aussi appris comment développer de manière proffessionelle avec l'approche AGILE ainsi que SOLIDE
+                    les structures de données. De plus, j'ai aussi appris comment développer de manière proffessionelle avec l'approche AGILE ainsi que SOLIDE.
                 </p>
                 <div className="mt-2 mb-2 w-full h-1  rounded-full  bg-slate-200 m-auto"/>
                 <p className="ProposTexte">

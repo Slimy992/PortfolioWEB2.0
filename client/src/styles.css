@@ -65,7 +65,7 @@
     }
 
     .BorderNoir{
-        @apply  border-4  border-zinc-800
+        @apply  shadow-2xl shadow-black
     }
 
     .ProposTexte{
