@@ -53,7 +53,8 @@
     }
 
     .BoutonMenu{
-        @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-5  py-2 first-letter:self-center transition m-2 mt-3 shadow-2xl shadow-black hover:bg-zinc-800 hover:text-white hover:shadow-white hover:scale-95
+        @apply bg-white text-zinc-800 cursor-pointer rounded-2xl w-[30%] px-5  py-2 first-letter:self-center transition m-2 mt-3 shadow-xl shadow-black 
+        hover:bg-zinc-800 hover:text-white hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)] hover:scale-95
     }
 
     .BoutonMenuBurger{
@@ -75,8 +76,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 13px;
-    height: 13px;
+    width: 6px;
   }
   ::-webkit-scrollbar-button {
     width: 0px;
