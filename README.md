@@ -1,12 +1,2 @@
-Voic mon portofolio Web 2.0 complétement responsive sous React/Tailwind et déployer à l'aide de NGINX
+Voic mon portofolio web !
 
-
-TODO : 
-
-    À faire :
-        - Script de déployment à chaque git push
-        - Rendre le code pour les grids plus propre
-        
-    À faire si j'ai le temps : 
-        - Changer les data de ../constants à une BD MySql sur mon VPS
-        - Créer un API qui peut fetch les donnée et affichier les élements UI relié.
