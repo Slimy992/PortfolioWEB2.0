@@ -11,7 +11,7 @@ export const ProjectCard =  ( props : ProjectProps ) => {
             <div className="rounded-[18px] my-4 min-w-[16rem] w-full max-w-[32rem] justify-center align-middle bg-white BorderNoir hover:scale-105 transition" >
                 <a href={props.lien} target="_blank">
                     <div className="relative max-h-[18rem] ">
-                        <img src={props.image} className="w-full h-[18rem]  rounded-t-xl   object-cover" alt="Gabriel Lafrance Project"/>
+                        <img src={props.image} className="w-full h-[18rem]  rounded-t-xl   object-cover" alt="Gabriel Lafrance Project" loading='lazy'/>
                     </div>
                     <div className="bg-white w-auto h-fit  text-primary-60 rounded-2xl p-8">
                         <h3 className=" my-2 TextBase">{props.nom}</h3>
