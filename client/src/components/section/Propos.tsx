@@ -9,7 +9,7 @@ const Propos = () =>{
     
     return (
     <section className="mt-32 h-fit flex flex-col align-midle justify-center content-center ">
-        <div className="w-3/4 h-fit min-w-[350px] monGivrer p-8 rounded-2xl text-secondary-30 self-center text-center shadow-2xl shadow-black">
+        <div className="w-3/4 h-fit min-w-[300px] monGivrer p-8 rounded-2xl text-secondary-30 self-center text-center shadow-2xl shadow-black">
             <div className="m-4 flex flex-col"> 
                 <Soustitre soustitre="À Propos de moi"/>
                 <Accordion.Root  type="multiple"  className='text-secondary-30   w-full mx-auto rounded-xl my-8 p-8 '>
@@ -22,7 +22,7 @@ const Propos = () =>{
                             <div className="mt-2 mb-2 h-1  rounded-full  bg-secondary-30 m-auto"/>
                         </Accordion.Header>
                         <Accordion.Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp fit overflow-hidden">
-                                <div className="h-fit TextLg my-2">
+                                <div className="h-fit TextBasePlus my-2">
                                     <p>
                                     J'ai pour objectif d'obtenir un poste de développeur web au sein d'une entreprise dynamique et innovante où je peux
                                     utiliser mes compétences et ma créativité pour contribuer à la croissance de l'organisation tout en
@@ -41,7 +41,7 @@ const Propos = () =>{
                             <div className="mt-2 mb-2  h-1  rounded-full  bg-secondary-30 m-auto"/>
                         </Accordion.Header>
                         <Accordion.Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp h-fit overflow-hidden">
-                                <div className="h-fit TextLg my-2">
+                                <div className="h-fit TextBasePlus my-2">
                                     <p>
                                     J'ai pour objectif d'obtenir un poste de développeur web au sein d'une entreprise dynamique et innovante où je peux
                                     utiliser mes compétences et ma créativité pour contribuer à la croissance de l'organisation tout en
@@ -60,7 +60,7 @@ const Propos = () =>{
                             <div className="mt-2 mb-2  h-1  rounded-full  bg-secondary-30 m-auto"/>
                         </Accordion.Header>
                         <Accordion.Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp h-fit overflow-hidden">
-                                <div className="h-fit TextLg my-2">
+                                <div className="h-fit TextBasePlus my-2">
                                     <p>
                                     J'ai principalement de l'expérience en développement web. Depuis trois ans et demi, 
                                     je me forme continuellement pour devenir le meilleur développeur web possible.

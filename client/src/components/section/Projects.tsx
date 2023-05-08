@@ -14,10 +14,10 @@ type ProjectProps = {
 const Projects = () =>{
     return (
         <section id="Project" className="mt-32 h-1/2 flex flex-col align-midle justify-center content-center">
-            <div className="w-4/5 h-fit pb-4 min-w-[350px] monGivrer rounded-2xl text-slate-200 self-center text-center p-8 shadow-2xl shadow-black">
+            <div className="w-4/5 h-fit pb-4 min-w-[300px] monGivrer rounded-2xl text-slate-200 self-center text-center p-8 shadow-2xl shadow-black">
                 <div className="flex flex-col"> 
                     <Soustitre soustitre="Mes Projets"/>
-                        <p className="mb-8 TextLg">
+                        <p className="mb-8 TextBasePlus">
                             Les projets suivants mettent en valeur mes compétences et mon expérience à travers
                             des exemples concrets de mon travail. C'est projets reflètent mes
                             capacités à résoudre des problèmes complexes et à travailler avec différentes technologies.

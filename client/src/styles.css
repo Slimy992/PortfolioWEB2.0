@@ -32,7 +32,11 @@
     }
 
     .TextSmall{
-        @apply  text-xs xs:text-sm md:text-base lg:text-lg xl:text-lgplus
+        @apply  text-xs xs:text-sm md:text-baseplus 
+    }
+    
+    .TextXlSmall{
+        @apply  text-xs xs:text-sm md:text-base
     }
 
     .Grid1x6{
@@ -64,7 +68,7 @@
     }
 
     .BoutonMenu{
-        @apply bg-action-10 text-white cursor-pointer rounded-xl w-[30%] px-5  py-2 transition m-3  
+        @apply bg-action-10 text-white cursor-pointer rounded-xl w-[30%] px-3  py-1 transition m-3 border border-red-800 
         hover:bg-action-10 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)] hover:scale-95
     }
 
@@ -99,7 +103,7 @@
     border-radius: 0px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #262626;
+    background: #dc2626;
   }
   ::-webkit-scrollbar-thumb:active {
     background: #222222;

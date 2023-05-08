@@ -43,9 +43,9 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
     <header className="sticky top-0 z-10 text-center monGivrer h-fit w-auto flex flex-col">
         <div className=" flex flex-row justify-between">
             <a href="https://github.com/Slimy992" target="_blank">
-                <img src={github} className="m-2 min-w-[4rem] min-h-[4rem] w-[14%] h-auto object-contain hover:scale-110  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
+                <img src={github} className="m-2 w-12 h-auto object-contain hover:scale-110  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
             </a>
-            <div className={largeurEcran > breakpoint ? "mt-2" : "hidden w-0 h-0"}>
+            <div className={largeurEcran > breakpoint ? "" : "hidden w-0 h-0"}>
                 <div className=" text-lgplus flex flex-row justify-around align-middle items-center mr-4">
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation' className="BoutonMenu">Présentation</Link>
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' className="BoutonMenu">Compétence</Link>
@@ -53,8 +53,8 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact' className="BoutonMenu">Contact</Link>
                 </div>
             </div >
-            <div className={largeurEcran <= breakpoint ? " mr-6 mb-[1.6rem]" : " hidden w-0 h-0"}>
-                    <div  onClick={Switch} className={estActif ? "tham-active tham tham-e-squeeze tham-w-10 mt-8 ml-8" : "tham tham-e-squeeze tham-w-10 mt-8 ml-8"}>
+            <div className={largeurEcran <= breakpoint ? " mr-6" : " hidden w-0 h-0"}>
+                    <div  onClick={Switch} className={estActif ? "tham-active tham tham-e-squeeze tham-w-10 mt-5 ml-8" : "tham tham-e-squeeze tham-w-10 mt-5 ml-8"}>
                         <div className="tham-box">
                             <div className="tham-inner bg-action-10" />
                         </div>
