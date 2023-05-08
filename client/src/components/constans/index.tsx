@@ -99,7 +99,7 @@ const projects = [
         },
       ],
       image: meteoPartout,
-      lien: "https://github.com/",
+      lien: "https://github.com/Slimy992/SiteMeteo",
     },
   ];
 

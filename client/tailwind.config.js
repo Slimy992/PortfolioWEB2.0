@@ -12,12 +12,12 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      'xs' : ['14px','14px'],
-      sm : ['17px','17px'],
-      base: ['20px','20px'],
-      'baseplus' :  ['23px','23px'],
-      lg: ['25px','25px'],
-      'lgplus' :  ['30px','30px'],
+      'xs' : ['16px','16px'],
+      sm : ['19px','19px'],
+      base: ['24px','24px'],
+      'baseplus' :  ['27px','27px'],
+      lg: ['30px','30px'],
+      'lgplus' :  ['33px','33px'],
       xl : ['36px','36px'],
       'xlplus' : ['40px','40px'],
       '2xl': ['50px','50px'],

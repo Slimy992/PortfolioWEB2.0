@@ -23,8 +23,12 @@
         @apply  text-base xs:text-lg md:text-lgplus lg:text-xl xl:text-xlplus
     }
 
+    .TextBasePlus{
+        @apply  text-base xs:text-baseplus md:text-lg lg:text-lgplus
+    }
+
     .TextBase{
-        @apply  text-sm xs:text-base md:text-lg lg:text-lgplus
+        @apply  text-sm xs:text-base md:text-baseplus lg:text-lg
     }
 
     .TextSmall{
