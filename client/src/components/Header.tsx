@@ -6,7 +6,7 @@ import github from "../assets/logo/github.png"
 
 const Header = () => {
 
-    var breakpoint : number = 720; {/* Width en pixel que le menu passe de normal à burger*/}
+    var breakpoint : number = 960; {/* Width en pixel que le menu passe de normal à burger*/}
 
     const [estActif, setActif] = React.useState(false);
 
@@ -17,7 +17,6 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
     const [largeurEcran, setLargeurEcran] = React.useState(window.innerWidth); {/* Gère la resize pour détecter quand mettre le menu bruger */}
 
     React.useEffect(() => {
-        console.log(largeurEcran);
         const handleResize = () => {
             if (estActif){
                 Switch();
@@ -41,13 +40,13 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
     }
 
     return (
-    <header className="sticky top-0 z-10 text-zinc-700 text-center monGivrer h-fit w-auto flex flex-col">
+    <header className="sticky top-0 z-10 text-center monGivrer h-fit w-auto flex flex-col">
         <div className=" flex flex-row justify-between">
             <a href="https://github.com/Slimy992" target="_blank">
-                <img src={github} className="m-2 min-w-[4rem] min-h-[4rem] w-[14%] h-auto object-contain hover:scale-110  transition " alt="Gabriel Lafrance Github"/>
+                <img src={github} className="m-2 min-w-[4rem] min-h-[4rem] w-[14%] h-auto object-contain hover:scale-110  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
             </a>
-            <div className={largeurEcran > breakpoint ? "mt-3" : "hidden w-0 h-0"}>
-                <div className="GrosseurTexteNormal flex flex-row justify-around align-middle items-center mr-4">
+            <div className={largeurEcran > breakpoint ? "mt-2" : "hidden w-0 h-0"}>
+                <div className=" text-lgplus flex flex-row justify-around align-middle items-center mr-4">
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation' className="BoutonMenu">Présentation</Link>
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' className="BoutonMenu">Compétence</Link>
                     <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project' className="BoutonMenu">Projet</Link>
@@ -57,13 +56,13 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
             <div className={largeurEcran <= breakpoint ? " mr-6 mb-[1.6rem]" : " hidden w-0 h-0"}>
                     <div  onClick={Switch} className={estActif ? "tham-active tham tham-e-squeeze tham-w-10 mt-8 ml-8" : "tham tham-e-squeeze tham-w-10 mt-8 ml-8"}>
                         <div className="tham-box">
-                            <div className="tham-inner bg-white" />
+                            <div className="tham-inner bg-action-10" />
                         </div>
                     </div>
             </div>
         </div>
         <div className={estActif && largeurEcran <= breakpoint ? "animate-drop-down w-full h-screen": "hidden"}>
-            <div className="w-full h-screen GrosseurTitre flex flex-col justify-around align-middle">
+            <div className="w-full h-screen TextLgPlus flex flex-col justify-around align-middle">
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Presentation' className="BoutonMenuBurger">Présentation</Link>
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétence</Link>
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Projet</Link>

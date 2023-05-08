@@ -1,5 +1,5 @@
 import portofolio from "../../assets/Project/Portfolio.png"
-import AVenir from "../../assets/Project/AVenir.jpg"
+import meteoPartout from "../../assets/Project/météopartout.png"
 import SuperLoc from "../../assets/Project/Super-Loc.png"
 
 
@@ -7,26 +7,33 @@ const competence = [
     {
         nom : "JavaScript",
         rating : 4.5,
+        experience : "3 ans",
     },
     {
         nom : "HTML",
         rating : 5,
+        experience : "3 ans",
     },
     {
         nom : "C++",
         rating : 4,
+        experience : "2 ans",
     },
     {
         nom : "TypeScript",
         rating : 4,
+        experience : "2 ans et demi",
     },
     {
         nom : "CSS",
         rating : 4.5,
+        experience : "3 ans",
+        
     },
     {
         nom : "C#",
         rating : 3.5,
+        experience : "1 ans",
     },
 ];
 
@@ -34,7 +41,7 @@ const projects = [
     {
       nom: "Mon Portfolio",
       description:
-        "C'est simplement mon portoflio en tant que jeune développeur Web.",
+        "C'est mon portoflio en tant que jeune développeur Web.",
       tags: [
         {
           name: "React",
@@ -45,7 +52,7 @@ const projects = [
           couleur: "text-sky-400",
         },
         {
-            name: "ReactIcons",
+            name: "Radix",
             couleur: "text-pink-600",
           },
       ],
@@ -55,18 +62,18 @@ const projects = [
     {
       nom: "Super-Loc",
       description:
-        "Un site fonctionnelle avec un API REST et un base de donnée MySQL.",
+        "Une application React avec un API et une base de donnée MySQL.",
       tags: [
         {
             name: "React",
             couleur: "text-blue-500",
         },
         {
-          name: "MySql",
+          name: "MySQL",
           couleur: "text-purple-600",
         },
         {
-          name: "RESTful",
+          name: "Express",
           couleur: "text-green-500",
         },
       ],
@@ -74,13 +81,26 @@ const projects = [
       lien: "https://github.com/Slimy992/BoutiqueLocation",
     },
     {
-      nom: "Project 3",
+      nom: "Météo-Partout",
       description:
-        "Encore à trouver",
-      tags: [],
-      image: AVenir,
+        "Un exercice simple avec un API en JavaScript vanilla sans framework",
+      tags: [
+        {
+          name: "JavaScript",
+          couleur: "text-yellow-400",
+        },
+        {
+          name: "Cookies",
+          couleur: "text-yellow-900",
+        },
+        {
+          name: "Express",
+          couleur: "text-green-500",
+        },
+      ],
+      image: meteoPartout,
       lien: "https://github.com/",
     },
   ];
 
-export { competence, projects};
+export { competence, projects };

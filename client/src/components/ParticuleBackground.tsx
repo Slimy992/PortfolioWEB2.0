@@ -5,25 +5,19 @@ import { loadFull } from "tsparticles";
 
 const ParticlesBackGround = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
-
         await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
-    }, []);
     
     return (
         <Particles 
             className="fixed -z-10"
             id="tsparticles"
             init={particlesInit}
-            loaded={particlesLoaded}
             options={{
                 background: {
                     color: {
-                        value: "#000000",
+                        value: "#18181b",
                     },
                 },
                 fpsLimit: 60,
@@ -34,13 +28,13 @@ const ParticlesBackGround = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#dc2626",
                     },
                     links: {
                         color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.8,
+                        opacity: 1,
                         width: 1,
                     },
                     collisions: {
@@ -64,16 +58,15 @@ const ParticlesBackGround = () => {
                         value: 65,
                     },
                     opacity: {
-                        value: 0.8,
+                        value: 1,
                     },
                     shape: {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 3, max: 6 },
+                        value: { min: 2, max: 8 },
                     },
                 },
-                detectRetina: true,
             }}
         />
     );

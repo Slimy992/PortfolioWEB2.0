@@ -11,7 +11,36 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
+    fontSize: {
+      'xs' : ['14px','14px'],
+      sm : ['17px','17px'],
+      base: ['20px','20px'],
+      'baseplus' :  ['23px','23px'],
+      lg: ['25px','25px'],
+      'lgplus' :  ['30px','30px'],
+      xl : ['36px','36px'],
+      'xlplus' : ['40px','40px'],
+      '2xl': ['50px','50px'],
+      '2xlplus': ['61px','61px'],
+      '3xl': ['82px','82px'],
+      '4xl': ['133px','133px'],
+    },
+    screens: {
+      'xs': '535px',
+      'sm': '640px',
+      'smplus': '680px',
+      'md': '768px',
+      'mdplus': '920px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
+      colors: {
+        'primary-60': '#18181b',
+        'secondary-30': '#FFFFFF',
+        'action-10': '#dc2626',
+      },
       keyframes :{
         dropDown : {
           '0%' : {	opacity: '0', transform: 'translateY(-100%)'},
@@ -20,16 +49,22 @@ module.exports = {
         fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 }
-        }
-      },
-      screens: {
-        'xs': { 'raw': '(min-width: 535px)' },
-        'lgplus': { 'raw': '(min-width: 1148px)' },
+        },
+        slideDown: {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        slideUp: {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
+        },
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
         'drop-down' : 'dropDown 0.7s ease 0s 1 normal forwards',
-        'fadeIn': "fadeIn 2s ease-in forwards"
+        'fadeIn': "fadeIn 2s ease-in forwards",
+        'slideDown': 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        'slideUp': 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       }
     },
   },

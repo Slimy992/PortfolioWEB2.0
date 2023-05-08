@@ -60,39 +60,37 @@ const Contact = () => {
   };
   return (
     <section id="Contact" className="mt-32 h-1/2 flex flex-col align-midle justify-center content-center">
-        <div className="w-3/4 h-fit min-w-[300px] monGivrer rounded-2xl text-white self-center text-center BorderBlanc">
-            <div className="m-4 flex flex-col"> 
+        <div className="w-3/4 h-fit min-w-[350px] monGivrer rounded-2xl text-white self-center text-center p-8 shadow-2xl shadow-black">
                 <Soustitre soustitre="Me contacter"/>
-                <form ref={formRef} onSubmit={handleSubmit} className="mt-4 flex flex-col gap-8" >
-                <div className="grid Grid1x2 sm:Grid2x1">
-                <label className="flex flex-col mr-4">
-                    <span className="text-white GrosseurSousTitre mb-4">Votre Nom :</span>
-                    <input type="text" name="nom" value={form.nom} onChange={handleChange}
-                    placeholder="Quel est votre nom?"
-                    className="bg-tertiary py-2 px-4 placeholder:text-secondary text-zinc-800 rounded-lg outline-none BorderNoir GrosseurTexteNormal"
-                    />
-                </label>
-                <label className="flex flex-col">
-                    <span className="text-white GrosseurSousTitre mb-4">Votre Email :</span>
-                    <input type="email" name="email" value={form.email} onChange={handleChange}
-                    placeholder="Quel est votre email?"
-                    className="bg-tertiary py-2 px-4 placeholder:text-secondary text-zinc-800 rounded-lg outline-none BorderNoir GrosseurTexteNormal"
-                    />
-                </label>
-                </div>
-                <label className="flex flex-col">
-                    <span className="text-white GrosseurSousTitre mb-4">Votre Message :</span>
-                    <textarea rows={7} name="message" value={form.message} onChange={handleChange}
-                    placeholder="Qu-est-ce que vous voulez me dire?"
-                    className="py-4 px-6 placeholder:text-secondary text-zinc-800 rounded-lg outline-none BorderNoir GrosseurTexteNormal"
-                    />
-                </label>
-                <button type="submit" className="py-2 px-4 rounded-xl w-fit text-zinc-800 GrosseurTexteNormal BorderNoir bg-white">
-                    {loading ? "En envoi..." : "Envoyer"}
-                </button>
+                <form ref={formRef} onSubmit={handleSubmit} className="my-4 flex flex-col gap-8" >
+                  <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 items-center gap-4">
+                    <label className="flex flex-col">
+                        <span className="text-white TextLgPlus my-4">Votre Nom :</span>
+                        <input type="text" name="nom" value={form.nom} onChange={handleChange}
+                        placeholder="Quel est votre nom?"
+                        className=" py-2 p-4  placeholder:text-secondary text-primary-60 rounded-lg outline-none TextBase w-full"
+                        />
+                    </label>
+                    <label className="flex flex-col">
+                        <span className="text-white TextLgPlus my-4">Votre Email :</span>
+                        <input type="email" name="email" value={form.email} onChange={handleChange}
+                        placeholder="Quel est votre email?"
+                        className=" py-2 p-4 mx-auto text-primary-60 rounded-lg outline-none  TextBase w-full" 
+                        />
+                    </label>
+                  </div>
+                  <label className="flex flex-col self-center w-full">
+                      <span className="text-white TextLgPlus my-4">Votre Message :</span>
+                      <textarea rows={9} name="message" value={form.message} onChange={handleChange}
+                      placeholder="Qu-est-ce que vous voulez me dire?"
+                      className="py-4 px-6 text-primary-60 rounded-xl outline-none TextBase"
+                      />
+                  </label>
+                  <button type="submit" className="py-2 px-4 rounded-xl w-fit TextBase BoutonMenu ">
+                      {loading ? "En envoi..." : "Envoyer"}
+                  </button>
                 </form>
             </div>
-        </div>
     </section>
     );
 }
