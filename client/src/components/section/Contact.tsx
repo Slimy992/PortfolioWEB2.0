@@ -42,7 +42,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Merci de m'avoir contacter, je vais essayer de vous répondre dans les plus bref délai.");
+          alert("Merci de m'avoir contacté, je vais essayer de vous répondre dans les plus brefs délais.");
           setForm({
             nom: "",
             email: "",

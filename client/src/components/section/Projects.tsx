@@ -19,7 +19,7 @@ const Projects = () =>{
                     <Soustitre soustitre="Mes Projets"/>
                         <p className="mb-8 TextBasePlus">
                             Les projets suivants mettent en valeur mes compétences et mon expérience à travers
-                            des exemples concrets de mon travail. C'est projets reflètent mes
+                            des exemples concrets de mon travail. Ces projets reflètent mes
                             capacités à résoudre des problèmes complexes et à travailler avec différentes technologies.
                         </p>
                         <div className="my-4 flex flex-row flex-wrap justify-around gap-7">

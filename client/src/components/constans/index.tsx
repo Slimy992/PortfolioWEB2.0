@@ -33,7 +33,7 @@ const competence = [
     {
         nom : "C#",
         rating : 3.5,
-        experience : "1 ans",
+        experience : "1 an",
     },
 ];
 
