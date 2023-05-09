@@ -43,7 +43,7 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
     <header className="sticky top-0 z-10 text-center monGivrer h-fit w-auto flex flex-col">
         <div className=" flex flex-row justify-between">
             <a href="https://github.com/Slimy992" target="_blank">
-                <img src={github} className="m-2 w-16 h-auto object-contain hover:scale-110  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
+                <img src={github} className="m-2 w-16 h-auto object-contain hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)]  hover:shadow-action-10 hover:scale-95  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
             </a>
             <div className={largeurEcran > breakpoint ? "mt-1" : "hidden w-0 h-0"}>
                 <div className=" text-lgplus flex flex-row justify-around align-middle items-center mr-4">

@@ -86,7 +86,7 @@ const Contact = () => {
                       className="py-4 px-6 text-primary-60 rounded-xl outline-none TextBase"
                       />
                   </label>
-                  <button type="submit" className="py-2 px-4 rounded-xl w-fit TextBase BoutonMenu ">
+                  <button type="submit" className="py-2 rounded-xl  TextBase BoutonMenu   self-center w-full">
                       {loading ? "En envoi..." : "Envoyer"}
                   </button>
                 </form>
