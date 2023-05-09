@@ -9,10 +9,10 @@ const Propos = () =>{
     
     return (
     <section className="mt-32 h-fit flex flex-col align-midle justify-center content-center ">
-        <div className="w-3/4 h-fit min-w-[300px] monGivrer p-8 rounded-2xl text-secondary-30 self-center text-center shadow-2xl shadow-black">
+        <div className="w-4/5 h-fit min-w-[300px] monGivrer p-8 rounded-2xl text-secondary-30 self-center text-center shadow-2xl shadow-black">
             <div className="m-4 flex flex-col"> 
                 <Soustitre soustitre="À Propos de moi"/>
-                <Accordion.Root  type="multiple"  className='text-secondary-30   w-full mx-auto rounded-xl my-8 p-8 '>
+                <Accordion.Root collapsible type="single"  className='text-secondary-30   w-full mx-auto rounded-xl my-8 p-8 '>
                     <Accordion.Item value="item-1" className=' w-full  mx-auto'>
                         <Accordion.Header  className="">
                             <Accordion.Trigger className='mx-auto group w-full flex flex-row  justify-between '>

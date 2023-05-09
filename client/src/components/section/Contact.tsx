@@ -60,7 +60,7 @@ const Contact = () => {
   };
   return (
     <section id="Contact" className="mt-32 h-1/2 flex flex-col align-midle justify-center content-center">
-        <div className="w-3/4 h-fit min-w-[300px] monGivrer rounded-2xl text-white self-center text-center p-8 shadow-2xl shadow-black">
+        <div className="w-4/5 h-fit min-w-[300px] monGivrer rounded-2xl text-white self-center text-center p-8 shadow-2xl shadow-black">
                 <Soustitre soustitre="Me contacter"/>
                 <form ref={formRef} onSubmit={handleSubmit} className="my-4 flex flex-col gap-8" >
                   <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 items-center gap-4">

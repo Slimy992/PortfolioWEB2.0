@@ -63,8 +63,8 @@ module.exports = {
         'spin-slow': 'spin 60s linear infinite',
         'drop-down' : 'dropDown 0.7s ease 0s 1 normal forwards',
         'fadeIn': "fadeIn 2s ease-in forwards",
-        'slideDown': 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-        'slideUp': 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        'slideDown': 'slideDown 500ms cubic-bezier(0.87, 0, 0.13, 1)',
+        'slideUp': 'slideUp 500ms cubic-bezier(0.87, 0, 0.13, 1)',
       }
     },
   },
