@@ -24,9 +24,10 @@ const Propos = () =>{
                         <Accordion.Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp fit overflow-hidden">
                                 <div className="h-fit TextBasePlus my-2">
                                     <p>
-                                    J'ai pour objectif d'obtenir un poste de développeur web au sein d'une entreprise dynamique et innovante où je peux
-                                    utiliser mes compétences et ma créativité pour contribuer à la croissance de l'organisation tout en
-                                    développant mes compétences et mon expertise en tant que développeur web.
+                                    J'ai commencé mon parcours scolaire en informatique, en 2021, dans le but d'obtenir un diplôme d'études collégiales (DEC) en Techniques de l'informatique, au Cégep de Rimouski.
+                                    Durant mon parcours , j'ai approfondi mes connaissances en programmation web, notamment en HTML, CSS, JavaScript, TypeScript et React. 
+                                    En parallèle de mes études, j'ai effectué plusieurs petits projets dans le but de développer mes compétences plus loin de ce qui était vu en classe.
+                                    Au cours de ces projets, j'ai étudié les concepts fondamentaux du développement de sites web tels que l'accessibilité et l'optimisation pour les moteurs de recherche.
                                     </p>
                                 </div>
                                 <div className="mt-4  h-1  rounded-full  bg-secondary-30 m-auto"/>
