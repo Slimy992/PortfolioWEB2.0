@@ -68,8 +68,8 @@
     }
 
     .BoutonMenu{
-        @apply bg-action-10 text-white cursor-pointer rounded-xl w-[30%] px-3  py-1 transition m-3 border border-red-800 
-        hover:bg-action-10 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)] hover:scale-95
+        @apply bg-action-10 text-white cursor-pointer rounded-xl w-[30%] px-4  py-2 transition m-3 border border-red-800 
+        hover:bg-action-10 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)]  hover:shadow-action-10 hover:scale-95
     }
 
     .BoutonMenuBurger{

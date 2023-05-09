@@ -43,17 +43,17 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
     <header className="sticky top-0 z-10 text-center monGivrer h-fit w-auto flex flex-col">
         <div className=" flex flex-row justify-between">
             <a href="https://github.com/Slimy992" target="_blank">
-                <img src={github} className="m-2 w-12 h-auto object-contain hover:scale-110  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
+                <img src={github} className="m-2 w-16 h-auto object-contain hover:scale-110  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
             </a>
-            <div className={largeurEcran > breakpoint ? "" : "hidden w-0 h-0"}>
+            <div className={largeurEcran > breakpoint ? "mt-1" : "hidden w-0 h-0"}>
                 <div className=" text-lgplus flex flex-row justify-around align-middle items-center mr-4">
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation' className="BoutonMenu">Présentation</Link>
-                    <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' className="BoutonMenu">Compétence</Link>
-                    <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project' className="BoutonMenu">Projet</Link>
+                    <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' className="BoutonMenu">Compétences</Link>
+                    <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project' className="BoutonMenu">Projets</Link>
                     <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact' className="BoutonMenu">Contact</Link>
                 </div>
             </div >
-            <div className={largeurEcran <= breakpoint ? " mr-6" : " hidden w-0 h-0"}>
+            <div className={largeurEcran <= breakpoint ? " mr-6 mt-2" : " hidden w-0 h-0"}>
                     <div  onClick={Switch} className={estActif ? "tham-active tham tham-e-squeeze tham-w-10 mt-5 ml-8" : "tham tham-e-squeeze tham-w-10 mt-5 ml-8"}>
                         <div className="tham-box">
                             <div className="tham-inner bg-action-10" />
@@ -61,11 +61,11 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
                     </div>
             </div>
         </div>
-        <div className={estActif && largeurEcran <= breakpoint ? "animate-drop-down w-full h-screen": "hidden"}>
+        <div className={estActif && largeurEcran <= breakpoint ? "animate-drop-down w-full h-screen" : "hidden"}>
             <div className="w-full h-screen TextLgPlus flex flex-col justify-around align-middle">
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Presentation' className="BoutonMenuBurger">Présentation</Link>
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétence</Link>
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Projet</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétences</Link>
+                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Projets</Link>
                 <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 112)} to='#Contact' className=" mb-48 BoutonMenuBurger ">Contact</Link>
             </div>
         </div>
