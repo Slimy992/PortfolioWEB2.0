@@ -73,7 +73,7 @@
     }
 
     .BoutonMenuBurger{
-        @apply BoutonMenu w-64 py-2 self-center m-4
+        @apply BoutonMenu w-2/3 py-2 self-center m-4
     }
     
     .BorderBlanc{
