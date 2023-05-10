@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import React from 'react';
 
 import { Soustitre } from "../builder/SousTitreSection";
+import { PaperAirplaneIcon } from '@heroicons/react/24/outline';
 
 
 const Contact = () => {
@@ -86,8 +87,9 @@ const Contact = () => {
                       className="py-4 px-6 text-primary-60 rounded-xl outline-none TextBase"
                       />
                   </label>
-                  <button type="submit" className="py-2 rounded-xl  TextBase BoutonMenu   self-center w-full">
-                      {loading ? "En envoi..." : "Envoyer"}
+                  <button type="submit" className="py-2 rounded-xl TextBase BoutonMenu self-center w-full">
+                      <PaperAirplaneIcon className='w-6 h-6 mr-2 mt-1'/>
+                      <span className='mt-[1px]'>{loading ? "En envoi..." : "Envoyer"}</span>
                   </button>
                 </form>
             </div>
