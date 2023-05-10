@@ -2,14 +2,36 @@ import * as React from 'react';
 import * as Menubar from '@radix-ui/react-menubar';
 import { HashLink as Link } from "react-router-hash-link";
 import { UserCircleIcon, PhoneArrowDownLeftIcon, BookOpenIcon, BeakerIcon, LanguageIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from 'react-i18next';
 
 import github from "../assets/logo/github.png"
 
+
 const Header = () => {
 
-    const [estActif, setActif] = React.useState(false);
+    const { i18n, t } = useTranslation();
 
-    const scrollOffset = (el : any, offset : number) => {  {/* Gère le offset du scroll pour ""centrer le contenue au scroll*/ }
+
+    const [estActif, setActif] = React.useState<boolean>(false);
+
+    function switchLangage(){
+        if (i18n.language == "fr-FR"){
+            i18n.changeLanguage("en-EN");
+        } else if (i18n.language === "en-EN"){
+            i18n.changeLanguage("fr-FR");
+        }
+    }
+
+    function langueInverse() : string {
+        if (i18n.language === "en-EN"){
+            return "Français"
+        } else {
+            return "English"
+        }
+    }
+
+
+    const scrollOffset = (el : any, offset : number) => {  {/* Gère le offset du scroll pour centrer le contenue au scroll*/ }
         const elementPosition = el.offsetTop - offset;
         window.scroll({
           top: elementPosition,
@@ -42,31 +64,31 @@ const Header = () => {
                         <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation'>
                             <Menubar.Item className='BoutonMenu'>
                                 <UserCircleIcon className='w-6 h-6 mr-2'/>
-                                <span className='mt-[2px]'>Présentation</span>
+                                <span className='mt-[2px]'>{t("presentation")}</span>
                             </Menubar.Item>
                         </Link>
                         <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence'>
                             <Menubar.Item className="BoutonMenu">
                                 <BeakerIcon className='w-6 h-6 mr-2'/>
-                                <span className='mt-[2px]'>Compétences</span>
+                                <span className='mt-[2px]'>{t("competence")}</span>
                             </Menubar.Item>
                         </Link>
                         <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project'>
                             <Menubar.Item className="BoutonMenu">
                                 <BookOpenIcon className='w-6 h-6 mr-2'/>
-                                <span className='mt-[2px]'>Projets</span>
+                                <span className='mt-[2px]'>{t("projet")}</span>
                             </Menubar.Item>    
                         </Link>
                         <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact'>
                             <Menubar.Item  className="BoutonMenu">
                                 <PhoneArrowDownLeftIcon className='w-6 h-6 mr-2'/>
-                                <span className='mt-[2px]'>Contact</span>
+                                <span className='mt-[2px]'>{t("contact")}</span>
                             </Menubar.Item>
                         </Link>
-                        <Menubar.Item  className="BoutonMenu">
-                                <LanguageIcon    className='w-6 h-6 mr-2'/>
-                                <span className='mt-[2px]'>Language</span>
-                            </Menubar.Item>
+                        <Menubar.Item className='BoutonMenu'  onClick={switchLangage}>
+                            <LanguageIcon    className='w-6 h-6 mr-2'/>
+                            <span className='mt-[2px]'>{langueInverse()}</span>
+                        </Menubar.Item>
                     </Menubar.Content>
                     </Menubar.Portal>
                 </Menubar.Menu>

@@ -7,41 +7,40 @@ const competence = [
     {
         nom : "JavaScript",
         rating : 4.5,
-        experience : "3 ans",
+        experience : "troisans",
     },
     {
         nom : "HTML",
         rating : 5,
-        experience : "3 ans",
+        experience : "troisans",
     },
     {
         nom : "C++",
         rating : 4,
-        experience : "2 ans",
+        experience : "deuxans",
     },
     {
         nom : "TypeScript",
         rating : 4,
-        experience : "2 ans et demi",
+        experience : "deuxansdemi",
     },
     {
         nom : "CSS",
         rating : 4.5,
-        experience : "3 ans",
+        experience : "troisans",
         
     },
     {
         nom : "C#",
         rating : 3.5,
-        experience : "1 an",
+        experience : "an",
     },
 ];
 
 const projects = [
     {
-      nom: "Mon Portfolio",
-      description:
-        "C'est mon portoflio en tant que jeune développeur Web.",
+      nom: "projet1",
+      description: "projetdesc1",
       tags: [
         {
           name: "React",
@@ -60,9 +59,8 @@ const projects = [
       lien: "https://github.com/Slimy992/PortfolioWEB2.0",
     },
     {
-      nom: "Super-Loc",
-      description:
-        "Une application React avec un API et une base de donnée MySQL.",
+      nom: "projet2",
+      description: "projetdesc2",
       tags: [
         {
             name: "React",
@@ -81,9 +79,8 @@ const projects = [
       lien: "https://github.com/Slimy992/BoutiqueLocation",
     },
     {
-      nom: "Météo-Partout",
-      description:
-        "Un exercice simple avec un API en JavaScript vanilla sans framework",
+      nom: "projet3",
+      description: "projetdesc3",
       tags: [
         {
           name: "JavaScript",

@@ -10,11 +10,17 @@ import Competence from "../components/section/Competence";
 import Projects from "../components/section/Projects";
 import Contact from "src/components/section/Contact";
 
+import { Provider } from "react-redux";
+import { store } from "../store";
+import "../i18n"
+
 export function App(){
 
     return (
     <BrowserRouter>
-        <Header/>
+        <Provider store={store}>
+            <Header/>
+        </Provider>
         <ParticlesBackGround/>
         <Profile/>
         <Propos/>
