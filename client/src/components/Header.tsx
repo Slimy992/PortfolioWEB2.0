@@ -1,4 +1,6 @@
 import * as React from 'react';
+import * as Select from '@radix-ui/react-select';
+import * as Menubar from '@radix-ui/react-menubar';
 import { HashLink as Link } from "react-router-hash-link";
 
 import github from "../assets/logo/github.png"
@@ -6,29 +8,7 @@ import github from "../assets/logo/github.png"
 
 const Header = () => {
 
-    var breakpoint : number = 960; {/* Width en pixel que le menu passe de normal à burger*/}
-
     const [estActif, setActif] = React.useState(false);
-
-function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burger*/ }
-        setActif(!estActif);
-    }
-
-    const [largeurEcran, setLargeurEcran] = React.useState(window.innerWidth); {/* Gère la resize pour détecter quand mettre le menu bruger */}
-
-    React.useEffect(() => {
-        const handleResize = () => {
-            if (estActif){
-                Switch();
-            }
-            setLargeurEcran(window.innerWidth);
-        }
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    })
 
     const scrollOffset = (el : any, offset : number) => {  {/* Gère le offset du scroll pour ""centrer le contenue au scroll*/ }
         const elementPosition = el.offsetTop - offset;
@@ -40,33 +20,42 @@ function Switch() {   {/* Switch On/Off pour l'ouverture/fermeture du menu Burge
     }
 
     return (
+
     <header className="sticky top-0 z-10 text-center monGivrer h-fit w-auto flex flex-col">
         <div className=" flex flex-row justify-between">
             <a href="https://github.com/Slimy992" target="_blank">
                 <img src={github} className="m-2 w-16 h-auto object-contain hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)]  hover:shadow-action-10 hover:scale-95  transition  rounded-full bg-action-10" alt="Gabriel Lafrance Github" loading='lazy'/>
             </a>
-            <div className={largeurEcran > breakpoint ? "mt-1" : "hidden w-0 h-0"}>
-                <div className=" text-lgplus flex flex-row justify-around align-middle items-center mr-4">
-                    <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation' className="BoutonMenu">Présentation</Link>
-                    <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' className="BoutonMenu">Compétences</Link>
-                    <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project' className="BoutonMenu">Projets</Link>
-                    <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact' className="BoutonMenu">Contact</Link>
-                </div>
-            </div >
-            <div className={largeurEcran <= breakpoint ? " mr-6 mt-2" : " hidden w-0 h-0"}>
-                    <div  onClick={Switch} className={estActif ? "tham-active tham tham-e-squeeze tham-w-10 mt-5 ml-8" : "tham tham-e-squeeze tham-w-10 mt-5 ml-8"}>
-                        <div className="tham-box">
-                            <div className="tham-inner bg-action-10" />
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div className={estActif && largeurEcran <= breakpoint ? "animate-drop-down w-full h-screen" : "hidden"}>
-            <div className="w-full h-screen TextLgPlus flex flex-col justify-around align-middle">
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Presentation' className="BoutonMenuBurger">Présentation</Link>
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Competence' className="BoutonMenuBurger">Compétences</Link>
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 96)} to='#Project' className="BoutonMenuBurger">Projets</Link>
-                <Link onClick={Switch} smooth scroll={el => scrollOffset(el, 112)} to='#Contact' className=" mb-48 BoutonMenuBurger ">Contact</Link>
+            <div className='mr-4 mt-2 w-fit h-fit'>
+                <Menubar.Root className='flex' onValueChange={() => setActif(!estActif)}>
+                <Menubar.Menu>
+                    <Menubar.Trigger className='grid place-items-center p-4 rounded-full bg-action-10 w-16 h-16 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,1)] hover:shadow-action-10 hover:scale-95'>
+                            <div className={estActif 
+                                ? "tham-active tham tham-e-squeeze  tham-w-8" 
+                                : "tham tham-e-squeeze tham-w-8"}>
+                                <div className="tham-box">
+                                    <div className="tham-inner bg-white" />
+                                </div>
+                            </div>
+                    </Menubar.Trigger>
+                    <Menubar.Portal>
+                <Menubar.Content className='absolute -right-16 top-6 rounded-2xl  w-[95vw] sm:w-96 p-8 h-[28rem]  monGivrer flex flex-col justify-around text-base text-center' >
+                        <Menubar.Item className='BoutonMenu'>
+                            <Link smooth scroll={el => scrollOffset(el, 192)} to='#Presentation'>Ma Présentation</Link>
+                        </Menubar.Item>
+                        <Menubar.Item className="BoutonMenu">
+                            <Link smooth scroll={el => scrollOffset(el, 192)} to='#Competence' >Mes Compétences</Link>
+                        </Menubar.Item>
+                        <Menubar.Item className="BoutonMenu">
+                            <Link smooth scroll={el => scrollOffset(el, 128)} to='#Project'>Mes Projets</Link>
+                        </Menubar.Item>
+                        <Menubar.Item  className="BoutonMenu">
+                            <Link smooth scroll={el => scrollOffset(el, 192)} to='#Contact'>Me Contacter</Link>
+                        </Menubar.Item>
+                    </Menubar.Content>
+                    </Menubar.Portal>
+                </Menubar.Menu>
+                </Menubar.Root>
             </div>
         </div>
     </header>
